@@ -6,6 +6,7 @@ import java.util.Map;
 
 import controller.CompleteController;
 import controller.HomeController;
+import controller.LoginformController;
 import controller.RegisterController;
 import controller.RegisterFormController;
 import jakarta.servlet.RequestDispatcher;
@@ -26,6 +27,7 @@ public class FrontController extends HttpServlet{
 		controllerMap.put("/registerform.hta", new RegisterFormController());
 		controllerMap.put("/register.hta", new RegisterController());
 		controllerMap.put("/complete.hta", new CompleteController());
+		controllerMap.put("/loginform.hta", new LoginformController());
 	}
 	
 	@Override
